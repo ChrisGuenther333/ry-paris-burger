@@ -49,7 +49,7 @@ nav ul li, footer ul li {
     padding: 30px;
     align-items: center;
 }
-.everydayImages, .everydayText, .healthyImages, .whereImages {
+.everydayImages, .everydayText, .healthyImages, .whereImages, .whereText {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -103,8 +103,24 @@ nav ul li, footer ul li {
 #healthyPhoto4 {
     background-image: url('../Images/breakfast-ideas.jpg');
 }
-.whereToEat {
-
+.wherePhoto {
+    height: 325px;
+    width: 325px;
+    margin: 30px 30px 15px 30px;
+    background-repeat: no-repeat;
+    border: 6px solid rgb(208, 208, 208);
+}
+#wherePhoto1 {
+    background-image: url('../Images/burger.jpg');
+}
+#wherePhoto2 {
+    background-image: url('../Images/pizza.jpeg');
+}
+#wherePhoto3 {
+    background-image: url('../Images/breakfast-ideas.jpg');
+}
+.whereText span {
+    text-align: center;
 }
 footer {
     display: flex;
