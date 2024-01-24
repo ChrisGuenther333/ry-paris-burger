@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+}
+nav {
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+nav ul, footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav img, nav ul, footer span, footer ul {
+    margin: 10px 60px 5px 60px;
+}
+nav ul li, footer ul li {
+    margin-left: 15px;
+}
+.mainPhoto {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.mainPhoto img {
+    position: relative;
+    z-index: 0;
+}
+.mainPhoto span {
+    position: absolute;
+    left: 700px;
+    bottom: 350px;
+    z-index: 1;
+    background-color: white;
+    padding: 15px;
+}
+.everydayCat {
+    padding: 30px;
+}
+.healthyRecipes {
+    background-color: rgb(208, 208, 208);
+    padding: 30px;
+}
+.whereToEat {
+    padding: 30px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 125px;
+}
