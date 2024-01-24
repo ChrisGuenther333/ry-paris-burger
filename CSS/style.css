@@ -47,6 +47,10 @@ footer {
     align-items: center;
     height: 125px;
 }
+.imageAndText {
+    display: flex;
+    flex-direction: column;
+}
 /*Home Page*/
 .mainPhoto {
     margin-top: 5px;
@@ -78,7 +82,7 @@ footer {
 .everydayCat p, .healthyRecipes p, .whereToEat p {
     font-size: 30px;
 }
-.everydayImages, .everydayText, .healthyImages, .whereImages, .whereText {
+.everydayImages, .healthyImages, .whereImages{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -170,9 +174,6 @@ footer {
     background-image: url('../Images/pexels-marta-dzedyshko-7693917.jpg');
     background-position: center;
     background-size: cover;
-}
-.whereText span {
-    text-align: center;
 }
 /*Recipe Page*/
 .recipeVisual {

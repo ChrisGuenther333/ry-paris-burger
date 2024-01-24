@@ -1,5 +1,7 @@
 # RY-Paris-Burger
--Center text under photos
+-Fix Time section
+-Fix margins on Recipe Page
+
 
 Final checks:
 -Check for typos
