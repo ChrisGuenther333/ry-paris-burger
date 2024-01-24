@@ -1,7 +1,14 @@
+/*General, Nav, Footer*/
 body {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+h1, h3, a, li, span {
+    font-family: 'Open Sans';
+}
+p {
+    font-family: 'Roboto';
 }
 h1, p {
     text-align: left;
@@ -19,7 +26,6 @@ nav, footer {
     width: 100%;
 }
 nav {
-    margin-bottom: 5px;
     padding-top: 10px;
 }
 nav ul, footer ul {
@@ -27,13 +33,21 @@ nav ul, footer ul {
     display: flex;
     flex-direction: row;
 }
-/*nav img, */nav ul, footer span, footer ul {
+nav ul, footer span, footer ul {
     margin: 10px 60px 5px 60px;
 }
 nav ul li, footer ul li {
     margin-left: 15px;
 }
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 125px;
+}
+/*Home Page*/
 .mainPhoto {
+    margin-top: 5px;
     background-image: url("../Images/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,16 +63,18 @@ nav ul li, footer ul li {
     margin-bottom: 5%;
 }
 .everydayCat, .healthyRecipes, .whereToEat {
-    width: 100%;
+    
     padding: 30px;
     align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .everydayImages, .everydayText, .healthyImages, .whereImages, .whereText {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
+    /* margin-left: 15%;
+    margin-right: 15%; */
 }
 .everydayPhoto {
     height: 300px;
@@ -126,9 +142,34 @@ nav ul li, footer ul li {
 .whereText span {
     text-align: center;
 }
-footer {
+/*Recipe Page*/
+.recipeVisual {
+    height: 800px;
+    background-color: rgb(208, 208, 208);
+}
+.recipePhoto {
+    background-image: url('../Images/bengal-burger.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.recipeIntro p {
+    background-color: rgb(208, 208, 208);
+}
+.recipeBody {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 125px;
+}
+.ingredients, .directions {
+    display: flex;
+    flex-direction: column;
+}
+.ingredients ul, .directions ul, .directions ol {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
