@@ -234,6 +234,40 @@ footer {
     padding: 40px 90px;
     text-align: center;
 }
+.recipeIntro .rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.recipeIntro .rating img {
+    height: auto;
+    width: 15%;
+    margin-right: 10px;
+}
+.recipeIntro .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.recipeIntro .buttons img:active, .recipeIntro .buttons input:active {
+    background-color: gray;
+}
+.recipeIntro .buttons input {
+    height: auto;
+    width: 12%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    margin-right: 60px;
+
+}
+.recipeIntro .buttons img {
+    height: auto;
+    width: 3%;
+}
 .recipeBody {
     display: flex;
     flex-direction: row;
