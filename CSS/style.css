@@ -3,6 +3,9 @@ body {
     flex-direction: column;
     text-align: center;
 }
+h1, p {
+    text-align: left;
+}
 nav, footer {
     display: flex;
     flex-direction: row;
@@ -33,6 +36,8 @@ nav ul li, footer ul li {
 }
 .mainPhoto img {
     position: relative;
+    width: 100%;
+    height: auto;
     z-index: 0;
 }
 .mainPhoto span {
@@ -44,7 +49,22 @@ nav ul li, footer ul li {
     padding: 15px;
 }
 .everydayCat {
+    width: 100%;
     padding: 30px;
+}
+.everydayImages {
+    overflow: visible;
+    align-items: center;
+    text-align: center;
+}
+.everydayImages img {
+    height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    margin: 30px 30px 15px 30px;
+}
+.everydayImages span {
+    margin-right: 110px;
 }
 .healthyRecipes {
     background-color: rgb(208, 208, 208);
