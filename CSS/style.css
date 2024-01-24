@@ -49,7 +49,7 @@ nav ul li, footer ul li {
     padding: 30px;
     align-items: center;
 }
-.everydayImages, .everydayText {
+.everydayImages, .everydayText, .healthyImages, .whereImages {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -76,10 +76,35 @@ nav ul li, footer ul li {
 }
 .healthyRecipes {
     background-color: rgb(208, 208, 208);
-    padding: 30px;
+}
+.healthyPhoto {
+    height: 250px;
+    width: 250px;
+    margin: 30px 30px 15px 30px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.healthyPhoto span {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+#healthyPhoto1 {
+    background-image: url('../Images/fajita-peppers.jpeg');
+}
+#healthyPhoto2 {
+    background-image: url('../Images/muffins.jpeg');
+}
+#healthyPhoto3 {
+    background-image: url('../Images/eggplant-parmesan.jpg');
+}
+#healthyPhoto4 {
+    background-image: url('../Images/breakfast-ideas.jpg');
 }
 .whereToEat {
-    padding: 30px;
+
 }
 footer {
     display: flex;
