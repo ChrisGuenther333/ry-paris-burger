@@ -193,25 +193,29 @@ footer {
     font-weight: 500;
 }
 .recipeTime {
-    width: 800px;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .recipeTime h1 {
-    font-size: 40px;
+    font-size: 38px;
+    margin-bottom: 0;
 }
-.timeText {
+.timeText1, .timeText2 {
     display: flex;
     flex-direction: row;
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 23px;
+    font-weight: 750;
+    margin-top: 15px;
 }
-.timeSpan {
-    margin-right: 25px;
+.timeText2 {
+    margin-bottom: 35px;
 }
-.timeText .timeEnd{
+.timeText1 span, .timeText2 span {
+    width: 270px;
+}
+.timeText1 .timeEnd, .timeText2 .timeEnd {
     font-weight: normal;
 }
 .recipeIntro h1 {
