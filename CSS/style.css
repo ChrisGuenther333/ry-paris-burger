@@ -1,9 +1,4 @@
 /*General, Nav, Footer*/
-body {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 h1, h2, h3, a, li, span {
     font-family: 'Open Sans';
 }
@@ -177,7 +172,6 @@ footer {
 }
 /*Recipe Page*/
 .recipeVisual {
-    height: 800px;
     background-color: rgb(208, 208, 208);
 }
 .recipePhoto {
@@ -199,24 +193,23 @@ footer {
     font-weight: 500;
 }
 .recipeTime {
+    width: 800px;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-}
-.timeText {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
+    justify-content: center;
 }
 .recipeTime h1 {
     font-size: 40px;
 }
-.timeText span {
+.timeText {
+    display: flex;
+    flex-direction: row;
     font-size: 25px;
     font-weight: 800;
+}
+.timeSpan {
+    margin-right: 25px;
 }
 .timeText .timeEnd{
     font-weight: normal;
@@ -224,6 +217,7 @@ footer {
 .recipeIntro h1 {
     font-size: 50px;
     text-align: center;
+    margin-bottom: 0;
 }
 .recipeIntro p {
     background-color: rgb(208, 208, 208);
@@ -296,9 +290,9 @@ footer {
     flex-direction: column;
 }
 .recipeTime, .recipeIntro, .recipeBody {
-    
-    padding: 30px;
-    align-items: center;
     margin-left: 15%;
     margin-right: 15%;
+}
+.recipeIntro, .recipeBody {
+    padding: 30px;
 }

@@ -1,7 +1,5 @@
 # RY-Paris-Burger
 -Fix Time section
--Fix margins on Recipe Page
-
 
 Final checks:
 -Check for typos
