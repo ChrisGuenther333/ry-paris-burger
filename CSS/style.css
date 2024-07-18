@@ -226,6 +226,11 @@ footer {
 .timeText1 .timeEnd, .timeText2 .timeEnd {
     font-weight: normal;
 }
+.recipeIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .recipeIntro h1 {
     font-size: 50px;
     text-align: center;
@@ -247,8 +252,7 @@ footer {
     align-items: center;
 }
 .recipeIntro .rating img {
-    height: auto;
-    width: 15%;
+    width: 190px;
     margin-right: 10px;
 }
 .recipeIntro .buttons {
@@ -257,22 +261,21 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.recipeIntro .buttons img:active, .recipeIntro .buttons input:active {
+.recipeIntro .buttons img:hover, .recipeIntro .buttons input:hover {
     background-color: gray;
 }
 .recipeIntro .buttons input {
-    height: auto;
-    width: 12%;
+    width: 150px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
     font-size: 15px;
     margin-right: 60px;
+    text-wrap: wrap;
 
 }
 .recipeIntro .buttons img {
-    height: auto;
-    width: 3%;
+    width: 40px;
 }
 .recipeBody {
     display: flex;
@@ -315,7 +318,7 @@ footer {
     padding: 45px 0;
     margin-bottom: 15px;
 }
-/* Home Page @media queries */
+/*@media queries */
 @media (max-width: 1554px) {
     .everydayCat span,  .healthyRecipes span, .whereToEat span {
         text-align: center;
@@ -342,31 +345,47 @@ footer {
         height: 350px;
         width: 350px;
     }
+    .recipeIntro {
+        margin: 0;
+    }
 }
 @media (max-width: 704px) {
-    .mainPhoto span {
+    .mainPhoto span, .recipePhoto span {
         font-size: 35px;
     }
     footer {
         flex-wrap: wrap;
     }
+    .recipeBody ul, .recipeBody ol {
+        padding-left: 20px;
+    }
 }
 @media (max-width: 605px) {
-    .mainPhoto span {
+    .mainPhoto span, .recipePhoto span {
         font-size: 25px;
     }
     .everydayCat, .healthyRecipes, .whereToEat {
         margin: 0;
     }
-}
-@media (max-width: 506px) {
-    .mainPhoto span {
+    .recipeIntro p {
+        margin: 45px 0;
         font-size: 25px;
+        padding: 40px 45px;
+    }
+    .recipeBody {
+        flex-direction: column;
     }
 }
 @media (max-width: 434px) {
+    .mainPhoto span, .recipePhoto span {
+        font-size: 22px;
+    }
     .everydayCat h1, .everydayCat p, .everydayCat span,  .healthyRecipes h1, .healthyRecipes p, .healthyRecipes span,  .whereToEat h1, .whereToEat p, .whereToEat span {
         text-align: center;
+    }
+    .recipeIntro p {
+        font-size: 22px;
+        padding: 30px 35px;
     }
 }
 @media (max-width: 375px) {
@@ -374,6 +393,9 @@ footer {
         font-size: 17px;
     }
     .mainPhoto span {
+        font-size: 20px;
+    }
+    .recipePhoto span {
         font-size: 20px;
     }
     .everydayCat, .healthyRecipes, .whereToEat {
