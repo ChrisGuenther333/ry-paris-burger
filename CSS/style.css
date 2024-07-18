@@ -210,20 +210,20 @@ footer {
     font-size: 38px;
     margin-bottom: 0;
 }
-.timeText1, .timeText2 {
+.timeText {
     display: flex;
     flex-direction: row;
     font-size: 23px;
     font-weight: 750;
-    margin-top: 15px;
+    margin: 15px 0 35px 0;
+    width: 56vw;
+    flex-wrap: wrap;
 }
-.timeText2 {
-    margin-bottom: 35px;
-}
-.timeText1 span, .timeText2 span {
+
+.timeText span{
     width: 270px;
 }
-.timeText1 .timeEnd, .timeText2 .timeEnd {
+.timeText .timeEnd {
     font-weight: normal;
 }
 .recipeIntro {
@@ -314,7 +314,6 @@ footer {
 .video {
     display: flex;
     justify-content: center;
-    background-color: rgb(208, 208, 208);
     padding: 45px 0;
     margin-bottom: 15px;
 }
@@ -323,6 +322,8 @@ footer {
     .everydayCat span,  .healthyRecipes span, .whereToEat span {
         text-align: center;
     }
+}
+@media (max-width: 964px) {
 }
 @media (max-width: 809px) {
     nav, footer {
@@ -374,6 +375,9 @@ footer {
     }
     .recipeBody {
         flex-direction: column;
+    }
+    .recipeTime, .timeText {
+        font-size: 21px;
     }
 }
 @media (max-width: 434px) {
