@@ -315,6 +315,12 @@ footer {
     padding: 45px 0;
     margin-bottom: 15px;
 }
+/* Home Page @media queries */
+@media (max-width: 1554px) {
+    .everydayCat span,  .healthyRecipes span, .whereToEat span {
+        text-align: center;
+    }
+}
 @media (max-width: 809px) {
     nav, footer {
         justify-content: space-evenly;
@@ -332,6 +338,10 @@ footer {
     nav ul li, footer ul li {
         margin: 0 10px;
     }
+    .healthyPhoto {
+        height: 350px;
+        width: 350px;
+    }
 }
 @media (max-width: 704px) {
     .mainPhoto span {
@@ -341,16 +351,35 @@ footer {
         flex-wrap: wrap;
     }
 }
+@media (max-width: 605px) {
+    .mainPhoto span {
+        font-size: 25px;
+    }
+    .everydayCat, .healthyRecipes, .whereToEat {
+        margin: 0;
+    }
+}
 @media (max-width: 506px) {
     .mainPhoto span {
         font-size: 25px;
     }
 }
-@media (max-width: 374px) {
-    nav ul {
-        flex-wrap: wrap;
+@media (max-width: 434px) {
+    .everydayCat h1, .everydayCat p, .everydayCat span,  .healthyRecipes h1, .healthyRecipes p, .healthyRecipes span,  .whereToEat h1, .whereToEat p, .whereToEat span {
+        text-align: center;
+    }
+}
+@media (max-width: 375px) {
+    nav {
+        font-size: 17px;
     }
     .mainPhoto span {
         font-size: 20px;
     }
+    .everydayCat, .healthyRecipes, .whereToEat {
+    
+        padding: 15px;
+    }
+
 }
+
