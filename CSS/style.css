@@ -352,6 +352,9 @@ footer {
     .recipeIntro {
         margin: 0;
     }
+    .recipePhoto span {
+        font-size: 40px;
+    }
     .recipeTime h1 {
         font-size: 27px;
 
@@ -365,6 +368,9 @@ footer {
     }
 }
 @media (max-width: 704px) {
+    nav img {
+        width: 175px;
+    }
     .mainPhoto span, .recipePhoto span {
         font-size: 35px;
     }
@@ -399,34 +405,75 @@ footer {
     }
     .recipeIntro p {
         margin: 45px 0;
-        font-size: 25px;
+        font-size: 23px;
         padding: 40px 45px;
     }
     .recipeBody {
         flex-direction: column;
+        padding: 0;
     }
-    .recipeTime {
-        align-items: center;
+    .recipeBody h2 {
+        font-size: 25px;
+    }
+    .recipeBody li {
+        font-size: 18px;
+    }
+    .timeText span {
+        width: 164px;
+        font-size: 15px;
     }
 }
 @media (max-width: 434px) {
+    nav {
+        font-size: 18px;
+    }
+    nav img {
+        width: 150px;
+    }
     .mainPhoto span, .recipePhoto span {
         font-size: 22px;
     }
-    .everydayCat h1, .everydayCat p, .everydayCat span,  .healthyRecipes h1, .healthyRecipes p, .healthyRecipes span,  .whereToEat h1, .whereToEat p, .whereToEat span {
+    .everydayCat h1, .healthyRecipes h1, .whereToEat h1 {
         text-align: center;
+        font-size: 40px;
+    }
+    .everydayCat p, .healthyRecipes p, .whereToEat p {
+        font-size: 25px;
+    }
+    .everydayCat span, .healthyRecipes span, .whereToEat span {
+        font-size: 14px;
     }
     .recipeIntro p {
-        font-size: 22px;
+        font-size: 19px;
         padding: 30px 35px;
+    }
+    .recipeBody h2 {
+        font-size: 22px;
+    }
+    .recipeBody li {
+        font-size: 16px;
+    }
+    .timeText span {
+        width: 129px;
+        font-size: 13px;
     }
 }
 @media (max-width: 375px) {
     nav {
-        font-size: 17px;
+        font-size: 16px;
     }
     .mainPhoto span {
         font-size: 20px;
+    }
+    .everydayCat h1, .healthyRecipes h1, .whereToEat h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .everydayCat p, .healthyRecipes p, .whereToEat p {
+        font-size: 22px;
+    }
+    .everydayCat span, .healthyRecipes span, .whereToEat span {
+        font-size: 13px;
     }
     .recipePhoto span {
         font-size: 20px;
@@ -435,6 +482,14 @@ footer {
     
         padding: 15px;
     }
-
+    .recipeIntro p {
+        font-size: 15px;
+    }
+    .recipeBody h2 {
+        font-size: 20px;
+    }
+    .recipeBody li {
+        font-size: 15px;
+    }
 }
 
