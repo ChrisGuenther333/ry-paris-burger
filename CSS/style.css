@@ -479,8 +479,10 @@ footer {
         font-size: 20px;
     }
     .everydayCat, .healthyRecipes, .whereToEat {
-    
         padding: 15px;
+    }
+    .recipeTime {
+        margin: 0 35px
     }
     .recipeIntro p {
         font-size: 15px;
