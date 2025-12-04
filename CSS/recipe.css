@@ -33,7 +33,6 @@
 }
 .timeText {
     display: flex;
-    flex-direction: row;
     font-size: 23px;
     font-weight: 750;
     margin: 15px 0 35px 0;
@@ -68,7 +67,6 @@
 }
 .recipeIntro .rating {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -78,7 +76,6 @@
 }
 .recipeIntro .buttons {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -100,7 +97,6 @@
 }
 .recipeBody {
     display: flex;
-    flex-direction: row;
     text-align: left;
     align-items: flex-start;
 }
