@@ -1,0 +1,128 @@
+/* HOME PAGE
+---------------------------- */
+.home-banner {
+    margin-top: 5px;
+    background-image: url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.home-banner span {
+    background-color: white;
+    padding: 15px;
+    /* margin-bottom: 5%; */
+    font-size: 50px;
+    position: relative;
+    bottom: 80px;
+}
+
+.home-content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 8px;
+}
+.home-content section {
+    padding: 30px;
+}
+.home-content section h1,
+.home-content section h2 {
+    font-size: 45px;
+}
+.home-content section p {
+    font-size: 30px;
+}
+.category-holder, .recipe-holder, .place-holder{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.home-content section span {
+    text-align: center;
+}
+.category-holder {
+    margin-top: 60px;
+    gap: 15px;
+}
+.category {
+    display: flex;
+    flex-direction: column;
+}
+.category img {
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+.healthy-recipes {
+    background-color: rgb(208, 208, 208);
+}
+.recipe-holder {
+    gap: 8px;
+}
+.recipe {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.recipe img {
+    object-fit: cover;
+}
+.recipe span {
+    background-color: white;
+    padding: 15px;
+}
+.place {
+    display: flex;
+    flex-direction: column;
+}
+.place img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 7px;
+    background-color: rgb(208, 208, 208);
+    object-fit: cover;
+}
+
+/* MEDIA QUERIES
+---------------------------- */
+@media (max-width: 605px) {
+    .everyday-categories, .healthy-recipes, .where-to-eat {
+        margin: 0;
+    }
+}
+@media (max-width: 434px) {
+    .home-banner span {
+        font-size: 22px;
+    }
+    .everyday-categories h1, .healthy-recipes h1, .where-to-eat h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .everyday-categories p, .healthy-recipes p, .where-to-eat p {
+        font-size: 25px;
+    }
+    .everyday-categories span, .healthy-recipes span, .where-to-eat span {
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    .home-banner span {
+        font-size: 20px;
+    }
+    .everyday-categories h1, .healthy-recipes h1, .where-to-eat h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .everyday-categories p, .healthy-recipes p, .where-to-eat p {
+        font-size: 22px;
+    }
+    .everyday-categories span, .healthy-recipes span, .where-to-eat span {
+        font-size: 13px;
+    }
+    .everyday-categories, .healthy-recipes, .where-to-eat {
+        padding: 15px;
+    }
+}
