@@ -22,9 +22,6 @@ a {
 a :hover {
     color: white;
 }
-a :focus {
-    border-bottom: 1px solid black;
-}
 nav,
 footer {
     display: flex;

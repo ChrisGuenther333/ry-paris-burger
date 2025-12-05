@@ -34,11 +34,11 @@
         <div class="recipe-time">
             <h1>Time</h1>
             <div class="time-description">
-                <span>Level: <span class="timeEnd">Easy</span></span>
-                <span>Prep: <span class="timeEnd">10 min</span></span>
-                <span>Yield: <span class="timeEnd">4 Hamburgers</span></span>
-                <span>Total: <span class="timeEnd">25 min</span></span>    
-                <span>Cook: <span class="timeEnd">15 min</span></span>
+                <p>Level: <span>Easy</span></p>
+                <p>Prep: <span>10 min</span></p>
+                <p>Yield: <span>4 Hamburgers</span></p>
+                <p>Total: <span>25 min</span></p>    
+                <p>Cook: <span>15 min</span></p>
             </div>
         </div>
     </div>
@@ -50,8 +50,8 @@
                 <span>26 Reviews</span>
             </div>
             <div class="buttons">
-                <input type="button" name="saveRecipe" id="saveRecipe" value="Save Recipe">
-                <img src="./images/print.png" alt="Print recipe">
+                <button class="save-recipe" onclick="checkSave()">Save Recipe</button>
+                <button class="print-recipe" onclick="window.print()"><img src="./images/print.png" alt="Print recipe"></button>
             </div>
             <p>"No more dry, lackluster burgers. These are juicy, and spices can be easily added or changed to suit anyone's tastes.
                 Baste frequently with your favorite barbeque sauce. If you find the meat mixture too mushy, just add more bread crumbs
@@ -105,7 +105,7 @@
                         Assemble the hamburgers with the condiments and toppings of your choice. Serve.</li>
                     <li>When cooking on a countertop grill, turn on grill, then place burgers on the heated grill.</li>
                 </ol>
-                <h3>Timing for a countertop grill:</h3>
+                <h2>Timing for a countertop grill:</h3>
                 <ul>
                     <li>For Medium-Rare: Cook for 3 minutes covered and then unplug the machine and continue to cook covered for 2 to 3 minutes.</li>
                     <li>For Medium: Cook for 4 minutes covered and then unplug the machine and continue to cook covered for 4 more minutes.</li>
@@ -128,5 +128,7 @@
             <a href="#"><li>Help</li></a>
         </ul>
     </footer>
+
+    <script src="./js/main.js" defer></script>
 </body>
 </html>

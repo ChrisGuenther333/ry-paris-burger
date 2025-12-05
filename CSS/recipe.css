@@ -45,11 +45,11 @@
     flex-wrap: wrap;
     max-width: 1055px;
 }
-.time-description span {
-    margin-right: 20px;
+.time-description p {
+    margin: 0 20px 0 0;
     width: 245px;
 }
-.time-description .timeEnd {
+.time-description span {
     font-weight: normal;
 }
 .recipe-intro {
@@ -85,11 +85,7 @@
     justify-content: center;
     align-items: center;
 }
-.recipe-intro .buttons img:hover, .recipe-intro .buttons input:hover {
-    background-color: gray;
-}
-.recipe-intro .buttons input {
-    width: 150px;
+.recipe-intro button {
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
@@ -98,8 +94,14 @@
     text-wrap: wrap;
 
 }
+.recipe-intro button.save-recipe {
+    padding: 0 30px;
+}
+.recipe-intro .buttons button:hover {
+    background-color: #ede9e9;
+}
 .recipe-intro .buttons img {
-    width: 40px;
+    max-width: 40px;
 }
 .recipe-body {
     display: flex;
