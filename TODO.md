@@ -2,7 +2,7 @@
 - [x] Update and clean up HTML and CSS
 - [x] Responsify
 - [ ] Create hamburger menu or some kind of interactive menu for mobile
-- [ ] Optimize images
+- [ ] Optimize Images
 - [ ] Check for best practices
 ## Potential Future Features
 - [x] Make Save Recipe and Print buttons actually functional
