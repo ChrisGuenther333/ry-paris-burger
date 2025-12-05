@@ -1,88 +1,94 @@
 /* RECIPE PAGE
 ---------------------------- */
-.recipeVisual {
+.recipe-visual {
     background-color: rgb(208, 208, 208);
 }
-.recipePhoto {
+.recipe-banner {
     background-image: url('../images/bengal-burger.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 650px;
+    height: 34.5vw;
+    min-height: 225px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
-.recipePhoto span {
+.recipe-banner span {
     background-color: white;
     padding: 15px;
-    margin-bottom: 3%;
-    font-size: 45px;
-    font-weight: 500;
+    font-size: clamp(20px, 5vw, 45px);
+    font-weight: 500;    
+    position: absolute;
+    bottom: 15%;
 }
-.recipeTime {
+.recipe-time {
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
 }
-.recipeTime h1 {
-    font-size: 38px;
+.recipe-time h1 {
+    font-size: clamp(25px, 6vw, 38px);
     margin-bottom: 0;
 }
-.timeText {
+.time-description {
     display: flex;
-    font-size: 23px;
+    font-size: clamp(18px, 4vw, 23px);
     font-weight: 750;
     margin: 15px 0 35px 0;
-    width: 56vw;
     flex-wrap: wrap;
+    max-width: 1055px;
 }
-
-.timeText span{
-    width: 270px;
+.time-description span {
+    margin-right: 20px;
+    width: 245px;
 }
-.timeText .timeEnd {
+.time-description .timeEnd {
     font-weight: normal;
 }
-.recipeIntro {
+.recipe-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.recipeIntro h1 {
-    font-size: 50px;
+.recipe-intro h1 {
+    font-size: clamp(40px, 10vw, 50px);
     text-align: center;
     margin-bottom: 0;
 }
-.recipeIntro p {
+.recipe-intro p {
     background-color: rgb(208, 208, 208);
-    font-size: 28px;
+    font-size: clamp(15px, 4vw, 28px);
     font-weight: bold;
     font-style: italic;
     color: rgb(77, 77, 77);
     padding: 40px 90px;
     text-align: center;
 }
-.recipeIntro .rating {
+.recipe-intro .rating {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.recipeIntro .rating img {
+.recipe-intro .rating img {
     width: 190px;
     margin-right: 10px;
 }
-.recipeIntro .buttons {
+.recipe-intro .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.recipeIntro .buttons img:hover, .recipeIntro .buttons input:hover {
+.recipe-intro .buttons img:hover, .recipe-intro .buttons input:hover {
     background-color: gray;
 }
-.recipeIntro .buttons input {
+.recipe-intro .buttons input {
     width: 150px;
     border: 2px solid black;
     border-radius: 10px;
@@ -92,22 +98,19 @@
     text-wrap: wrap;
 
 }
-.recipeIntro .buttons img {
+.recipe-intro .buttons img {
     width: 40px;
 }
-.recipeBody {
+.recipe-body {
     display: flex;
     text-align: left;
     align-items: flex-start;
 }
-.recipeBody h2 {
-    font-size: 30px;
+.recipe-body h2 {
+    font-size: clamp(22px, 5vw, 30px);
 }
-.recipeBody h3 {
-    font-size: 25p;
-}
-.recipeBody li {
-    font-size: 20px;
+.recipe-body {
+    font-size: clamp(17px, 4vw, 20px);
     margin-bottom: 10px;
 }
 .ingredients, .directions {
@@ -121,11 +124,12 @@
     display: flex;
     flex-direction: column;
 }
-.recipeTime, .recipeIntro, .recipeBody {
-    margin-left: 15%;
-    margin-right: 15%;
+.recipe-intro, .recipe-body {
+    max-width: 1250px;
+    margin: auto;
+    padding: 8px;
 }
-.recipeIntro, .recipeBody {
+.recipe-intro, .recipe-body {
     padding: 30px;
 }
 .video {
@@ -137,9 +141,10 @@
 
 /* MEDIA QUERIES
 ---------------------------- */
-@media (max-width: 964px) {
-    .timeText {
-        width: auto;
+@media (max-width: 1025px) {
+    .recipe-banner span {
+        position: static;
+        margin: 0;
     }
 }
 @media (max-width: 809px) {
@@ -147,104 +152,36 @@
         height: 350px;
         width: 350px;
     }
-    .recipeIntro {
+    .recipe-intro {
         margin: 0;
-    }
-    .recipePhoto span {
-        font-size: 40px;
-    }
-    .recipeTime h1 {
-        font-size: 27px;
-
-    }
-    .recipeTime {
-        margin-right: 70px;
-        margin-left: 70px;
-    }
-    .timeText {
-        font-size: 18px;
     }
 }
 @media (max-width: 704px) {
-    .recipePhoto span {
-        font-size: 35px;
-    }
-    .recipeBody ul, .recipeBody ol {
+    .recipe-body ul, .recipe-body ol {
         padding-left: 20px;
-    }
-    .recipeTime {
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    .recipeTime h1 {
-        font-size: 25px;
-
-    }
-    .timeText {
-        font-size: 17px;
-        justify-content: space-between;
-    }
-    .timeText span {
-        width: 200px;
     }
 }
 @media (max-width: 605px) {
-    .recipePhoto span {
-        font-size: 25px;
+    .recipe-time h1 {
+        margin-top: 5px;
     }
-    .recipeIntro p {
+    .time-description {
+        margin: 10px 0 5px;
+    }
+    .recipe-intro p {
         margin: 45px 0;
-        font-size: 23px;
         padding: 40px 45px;
     }
-    .recipeBody {
+    .recipe-body {
         flex-direction: column;
-        padding: 0;
+        padding: 0 15px;
     }
-    .recipeBody h2 {
-        font-size: 25px;
-    }
-    .recipeBody li {
-        font-size: 18px;
-    }
-    .timeText span {
-        width: 164px;
-        font-size: 15px;
+    .recipe-body .ingredients {
+        margin: 0;
     }
 }
 @media (max-width: 434px) {
-    .recipePhoto span {
-        font-size: 22px;
-    }
-    .recipeIntro p {
-        font-size: 19px;
+    .recipe-intro p {
         padding: 30px 35px;
-    }
-    .recipeBody h2 {
-        font-size: 22px;
-    }
-    .recipeBody li {
-        font-size: 16px;
-    }
-    .timeText span {
-        width: 129px;
-        font-size: 13px;
-    }
-}
-@media (max-width: 375px) {
-    .recipePhoto span {
-        font-size: 20px;
-    }
-    .recipeTime {
-        margin: 0 35px
-    }
-    .recipeIntro p {
-        font-size: 15px;
-    }
-    .recipeBody h2 {
-        font-size: 20px;
-    }
-    .recipeBody li {
-        font-size: 15px;
     }
 }
