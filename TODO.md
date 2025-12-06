@@ -1,7 +1,13 @@
 # To-Do
-- [ ] Finish implementing menu
-- [ ] clean up HTML and CSS
-- [ ] Optimize Images
+- [ ] Make mobile menu sticky
+- [ ] Further clean up/optimize HTML and CSS
 - [ ] Check for best practices
-- [ ] Populate other tabs with content
-## Potential Future Features
+
+<!-- ## Potential Future Features -->
+## Done
+- [x] Update and clean up HTML and CSS
+- [x] Responsify
+- [x] Create interactive menu for mobile
+- [x] Optimize images
+- [x] Make Save Recipe and Print buttons actually functional
+- [x] Populate other tabs with content

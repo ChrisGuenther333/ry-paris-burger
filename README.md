@@ -1,3 +1,3 @@
 # Ry-Paris-Burger
-View live project demo [here](https://chrisguenther333.github.io/ry-paris-burger/)  
+View live project demo [here](https://chrisguenther333.github.io/ry-paris-burger/)
 This project was made with CSS, HTML, and some JavaScript
