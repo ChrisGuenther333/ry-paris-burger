@@ -15,11 +15,11 @@ h1,
 p {
     text-align: left;
 }
-a {
+li a {
     text-decoration: none;
     color: black;
 }
-a :hover {
+li a:hover {
     color: white;
 }
 nav,
@@ -110,13 +110,17 @@ footer {
     }
 
     nav .mobile-nav ul,
-    nav .mobile-nav button,
-    nav .mobile-nav ul a,
-    nav .mobile-nav ul {
+    nav .mobile-nav button {
         background-color: orange;
         margin: 0 auto;
         padding: 0;
         width: 375px;
+    }
+    nav .mobile-nav ul li {
+        background-color: orange;
+        margin: 0 auto;
+        padding: 0;
+        width: fit-content;
     }
 
     nav .mobile-nav button {
@@ -127,11 +131,16 @@ footer {
     nav .mobile-nav button:hover {
         cursor: pointer;
     }
-    nav .mobile-nav ul a {
+    nav .mobile-nav ul li a {
         border: none;
         border-top: 0.8px solid #2d2c2a;
         /* border-bottom: 0.8px solid black; */
         padding: 5px;
+        width: 375px;
+    }
+    nav .mobile-nav ul a {
+        display: block;
+        width: 100%;
     }
     nav .mobile-nav ul a:hover {
         background-color: #2d2c2a;
@@ -143,19 +152,15 @@ footer {
     nav {
         font-size: 18px;
     }
+    nav .mobile-nav ul {
+        top: 99px;
+}
 }
 @media (max-width: 400px) {
     nav .mobile-nav ul,
     nav .mobile-nav button,
-    nav .mobile-nav ul a,
+    nav .mobile-nav ul li a,
     nav .mobile-nav ul {
         width: 100%;
-    }
-}
-
-
-@media (max-width: 375px) {
-    nav {
-        font-size: 16px;
     }
 }
