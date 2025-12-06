@@ -149,6 +149,11 @@
         margin: 0;
     }
 }
+@media (max-width: 637px) {
+    .buttons .print-recipe {
+        display: none;
+    }
+}
 @media (max-width: 809px) {
     .recipe {
         height: 350px;
