@@ -40,9 +40,16 @@ footer ul {
     display: flex;
     gap: 15px;
 }
-nav ul.mobile-nav {
+
+nav .mobile-nav {
     display: none;
-    flex-direction: column;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+nav .mobile-nav ul.mobile-menu-active {
+    display: flex;
 }
 nav ul,
 footer ul {
@@ -61,7 +68,7 @@ footer {
 
 /* MEDIA QUERIES
 ---------------------------- */
-@media (max-width:842px) {
+@media (max-width: 842px) {
     nav, footer {
         justify-content: space-evenly;
     }
@@ -82,18 +89,71 @@ footer {
     }
 }
 @media (max-width: 637px) {
-    nav ul.desktop-nav {
+    nav .desktop-nav {
         display: none;
     }
-    nav ul.mobile-nav {
-        display: block;
+    nav .mobile-nav {
+        display: flex;
+        flex-direction: column;
     }
+    nav .mobile-nav ul {
+        display: none;
+        position: absolute;
+        top: 104px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    nav .mobile-nav ul,
+    nav .mobile-nav button,
+    nav .mobile-nav ul a,
+    nav .mobile-nav ul {
+        background-color: orange;
+        margin: 0 auto;
+        padding: 0;
+        width: 375px;
+    }
+
+    nav .mobile-nav button {
+        border: none;
+        border-top: 0.8px solid #2d2c2a;
+        padding: 5px;
+    }
+    nav .mobile-nav button:hover {
+        cursor: pointer;
+    }
+    nav .mobile-nav ul a {
+        border: none;
+        border-top: 0.8px solid #2d2c2a;
+        /* border-bottom: 0.8px solid black; */
+        padding: 5px;
+    }
+    nav .mobile-nav ul a:hover {
+        background-color: #2d2c2a;
+        color: white;
+    }
+
 }
 @media (max-width: 434px) {
     nav {
         font-size: 18px;
     }
 }
+@media (max-width: 400px) {
+    nav .mobile-nav ul,
+    nav .mobile-nav button,
+    nav .mobile-nav ul a,
+    nav .mobile-nav ul {
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 375px) {
     nav {
         font-size: 16px;

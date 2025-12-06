@@ -1,0 +1,7 @@
+.page-content {
+    width: 100%;
+    margin: auto;
+}
+.page-content a:hover {
+    border-bottom: 1px solid black;
+}
