@@ -9,5 +9,6 @@
 - [x] Responsify
 - [x] Create interactive menu for mobile
 - [x] Optimize images
+- [x] Add favicon
 - [x] Make Save Recipe and Print buttons actually functional
 - [x] Populate other tabs with content
