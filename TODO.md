@@ -1,5 +1,5 @@
 # To-Do
-- [x] 
+*N/A*
 
 ## Potential Future Features
 - [ ] Convert to mobile-friendly
