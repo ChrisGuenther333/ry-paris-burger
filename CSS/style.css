@@ -30,6 +30,9 @@ footer {
     background-color: orange;
 }
 nav {
+    z-index: 1;
+    top: 8px;
+    position: sticky;
     padding-top: 10px;
     font-size: 20px;
     font-weight: 500;
