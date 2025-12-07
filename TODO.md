@@ -1,9 +1,9 @@
 # To-Do
-- [ ] Make mobile menu sticky
-- [ ] Further clean up/optimize HTML and CSS
-- [ ] Check for best practices
+-
 
-<!-- ## Potential Future Features -->
+## Potential Future Features
+- [ ] Convert to mobile-friendly
+
 ## Done
 - [x] Update and clean up HTML and CSS
 - [x] Responsify
@@ -12,3 +12,5 @@
 - [x] Add favicon
 - [x] Make Save Recipe and Print buttons actually functional
 - [x] Populate other tabs with content
+- [x] Make mobile menu sticky
+- [x] Further clean up/optimize HTML and CSS

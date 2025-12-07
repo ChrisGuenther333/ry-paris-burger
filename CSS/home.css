@@ -101,11 +101,6 @@
         margin: 0;
     }
 }
-@media (max-width: 500px) {
-    .healthy-recipes h2  {
-        margin-top: 0;
-    }
-}
 @media (max-width: 450px) {
     .home-content .everyday-categories,
     .home-content .where-to-eat {
@@ -127,9 +122,6 @@
 @media (max-width: 434px) {
     .home-content section p {
         font-size: 25px;
-    }
-    .home-content section span {
-        font-size: 14px;
     }
 }
 @media (max-width: 375px) {

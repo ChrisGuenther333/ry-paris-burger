@@ -42,6 +42,8 @@ footer ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin: 10px 60px 5px 5px;
+    padding: 0;
 }
 
 nav .mobile-nav {
@@ -54,16 +56,10 @@ nav .mobile-nav {
 nav .mobile-nav ul.mobile-menu-active {
     display: flex;
 }
-nav ul,
-footer ul {
-    margin: 10px 60px 5px 5px;
-    padding: 0;
-}
 footer span {
     margin: 10px 20px 5px 60px;
 }
 footer {
-    display: flex;
     align-items: center;
     height: 125px;
     flex-wrap: wrap;
@@ -124,6 +120,7 @@ footer {
         margin: 0 auto;
         padding: 0;
         width: 100%;
+        text-align: center;
     }
 
     nav .mobile-nav button {
@@ -135,12 +132,8 @@ footer {
         cursor: pointer;
     }
     nav .mobile-nav ul li a {
-        border: none;
         border-top: 0.8px solid #2d2c2a;
-        /* border-bottom: 0.8px solid black; */
         padding: 5px 0;
-        width: 100%;
-        text-align: center;
     }
     nav .mobile-nav ul a {
         display: block;
@@ -162,9 +155,7 @@ footer {
 }
 @media (max-width: 400px) {
     nav .mobile-nav ul,
-    nav .mobile-nav button,
-    nav .mobile-nav ul li a,
-    nav .mobile-nav ul {
+    nav .mobile-nav button {
         width: 100%;
     }
 }
